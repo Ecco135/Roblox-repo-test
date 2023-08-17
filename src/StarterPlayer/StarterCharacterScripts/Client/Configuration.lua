@@ -10,7 +10,6 @@ local dashDuration = 0.3
 local dashSpeed = 50
 local dashCD = false
 
-
 --Camera configuration
 local WalkFov = 70
 local RunFov = 80
