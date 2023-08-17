@@ -11,6 +11,7 @@ local Player = game.Players.LocalPlayer
 local Character = Player.Character or Player.CharacterAdded:Wait()
 local Humanoid = Character:WaitForChild("Humanoid")
 local root = Character:WaitForChild("HumanoidRootPart")
+local x = 32
 
 local Camera = game.Workspace.CurrentCamera
 
