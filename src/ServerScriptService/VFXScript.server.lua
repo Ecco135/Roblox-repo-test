@@ -7,7 +7,7 @@ local debris = game:GetService("Debris")
 local ts = game:GetService("TweenService")
 local jumpSound = jumpEffectT:WaitForChild("AirJump")
 
-function dashVFX(player, root, direction, duration)
+function dashVFX(root, direction, duration)
 	local dashEffect1 = dashEffectT:Clone()
 	dashEffect1.CFrame = CFrame.new(root.position, root.position + direction)
 	dashEffect1.Parent = game.Workspace.VFX
@@ -71,7 +71,7 @@ function dashVFX(player, root, direction, duration)
 	dashEffect2:Destroy()
 end
 
-function jumpVFX(player, root)
+function jumpVFX(root)
 	local jumpEffect = jumpEffectT:Clone()
 	jumpSound:Play()
 	jumpEffect.Position = root.position
